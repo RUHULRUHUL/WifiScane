@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bugbd.wifiscane.Scan_Result.ShowItemResult">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_lay_id"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#F8F8F8">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/BackPress"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Item Result"
+                    android:textColor="#000"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbar_lay_id">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="25dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_wifi_black_24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/type_id"
+                                android:textColor="#676666"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/text1_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contextClickable="true"
+                                    android:longClickable="true"
+                                    android:selectAllOnFocus="true"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#676666"
+                                    android:textIsSelectable="true"
+                                    app:layout_constraintTop_toBottomOf="@+id/type_id"
+                                    tools:layout_editor_absoluteX="0dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/text3_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:contextClickable="true"
+                                    android:longClickable="true"
+                                    android:selectAllOnFocus="true"
+                                    android:textAlignment="textStart"
+                                    android:textIsSelectable="true"
+                                    android:textColor="#676666"
+                                    app:layout_constraintTop_toBottomOf="@+id/text2_id"
+                                    tools:layout_editor_absoluteX="0dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/text2_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contextClickable="true"
+                                    android:longClickable="true"
+                                    android:selectAllOnFocus="true"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000"
+                                    android:textIsSelectable="true"
+                                    android:textSize="18sp"
+                                    app:layout_constraintTop_toBottomOf="@+id/text1_id"
+                                    tools:layout_editor_absoluteX="0dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
